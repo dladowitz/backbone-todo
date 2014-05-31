@@ -1,5 +1,10 @@
 var app = app || {};
 
+
+
+
+
+
 // Todos Collection
 // ---------------
 // The collection of todos is backed by *localStorage* instead of a remote server.
@@ -19,7 +24,7 @@ var TodoList = Backbone.Collection.extend({
   // Filter down the list of all todos that are finished.
   completed: function(){
     return this.filter(function(todo){
-      return this.get('completed');
+      return todo.get('completed');
     });
   },
 
